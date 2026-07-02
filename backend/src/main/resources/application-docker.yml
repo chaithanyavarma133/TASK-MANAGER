@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:postgres}:${DB_PORT:5432}/${DB_NAME:taskmanager}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USER:taskmanager}
+    password: ${DB_PASSWORD:taskmanager}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
