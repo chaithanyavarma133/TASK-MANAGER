@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Task Manager — Full-Stack Java Application
 
 A multi-user project/task board (Trello-style) built with Spring Boot, PostgreSQL, and React.
@@ -120,3 +121,7 @@ Authorization: Bearer <token from login/register>
 - Entities use `@JsonIgnore`/`@JsonIgnoreProperties` to avoid leaking passwords or infinite JSON recursion — for a larger app you'd replace this with explicit response DTOs.
 - No refresh tokens — the JWT simply expires after `JWT_EXPIRATION_MS` and the user has to log in again (frontend already redirects to `/login` on a 401).
 - Comment UI isn't wired into the board yet — the endpoints exist (`/api/tasks/{id}/comments`) if you want to add a comment panel to a task card.
+=======
+# TASK-MANAGER
+Developed a full-stack Task Manager application that helps users organize projects and track daily tasks. It supports secure registration and login, task creation, editing, deletion, priorities, due dates, and status tracking. Built REST APIs with Spring Boot and a responsive React frontend using JWT authentication and database integration.
+>>>>>>> b73553cfaae11df861eb8f2db6cef6911de1bd8f
